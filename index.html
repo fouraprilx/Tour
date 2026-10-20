@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="บริษัทท่องเที่ยว แพ็กเกจทัวร์จีนและญี่ปุ่น บริการด้วยความประทับใจ">
+  <title>Travel Dream | บริษัทท่องเที่ยว</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Tahoma, Arial, sans-serif;
+      color: #25334a;
+      line-height: 1.7;
+      background: #ffffff;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 15px #00000012;
+    }
+
+    nav {
+      max-width: 1150px;
+      margin: auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      color: #087fc4;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      align-items: center;
+    }
+
+    .menu a:hover {
+      color: #087fc4;
+    }
+
+    .hero {
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      color: white;
+      background:
+        linear-gradient(90deg, #09233cdd, #09233c35),
+        url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+    }
+
+    .hero-content {
+      max-width: 1150px;
+      width: 100%;
+      margin: auto;
+      padding: 70px 24px;
+    }
+
+    .hero h1 {
+      font-size: clamp(35px, 5vw, 58px);
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      border-radius: 30px;
+      background: #08a5e5;
+      color: white;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background: #057ab6;
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: 75px 24px;
+      scroll-margin-top: 75px;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      color: #123c60;
+      margin-bottom: 12px;
+    }
+
+    .section-desc {
+      text-align: center;
+      color: #68778a;
+      margin-bottom: 38px;
+    }
+
+    .about {
+      text-align: center;
+      background: #f5faff;
+    }
+
+    .about-text {
+      max-width: 800px;
+      margin: auto;
+      font-size: 17px;
+    }
+
+    .products {
+      background: white;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      border-radius: 16px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 8px 28px #173a5915;
+      transition: 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 32px #173a5925;
+    }
+
+    .card img {
+      width: 100%;
+      height: 270px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 25px;
+    }
+
+    .card h3 {
+      font-size: 24px;
+      color: #087fc4;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #64748b;
+      margin-bottom: 20px;
+    }
+
+    .contact {
+      background: #eef7ff;
+      text-align: center;
+    }
+
+    .phone {
+      font-size: clamp(25px, 4vw, 36px);
+      font-weight: bold;
+      color: #087fc4;
+      margin: 20px 0;
+    }
+
+    footer {
+      background: #102d46;
+      color: #d9e8f5;
+      text-align: center;
+      padding: 25px 15px;
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .menu {
+        justify-content: center;
+        gap: 12px 18px;
+        font-size: 14px;
+      }
+
+      .hero {
+        min-height: 450px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .card img {
+        height: 230px;
+      }
+
+      section {
+        padding: 55px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- เมนูหลัก -->
+  <header>
+    <nav>
+      <a class="logo" href="#home">✈ Travel Dream</a>
+      <div class="menu">
+        <a href="#home">หน้าแรก</a>
+        <a href="#about">ประวัติบริษัท</a>
+        <a href="#products">แพ็กเกจทัวร์</a>
+        <a href="#contact">ติดต่อเรา</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ภาพหน้าปก -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>เปิดประสบการณ์ใหม่<br>ให้ทุกการเดินทาง</h1>
+      <p>เที่ยวสนุก เดินทางอุ่นใจ ประทับใจทุกเส้นทาง<br>
+        พบกับทริปท่องเที่ยวจีนและญี่ปุ่นที่คุณไม่ควรพลาด</p>
+      <a href="#products" class="btn">ค้นหาแพ็กเกจทัวร์ →</a>
+    </div>
+  </section>
+
+  <!-- ประวัติบริษัท -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">ประวัติบริษัท</h2>
+      <p class="section-desc">เกี่ยวกับ Travel Dream</p>
+      <div class="about-text">
+        <p>
+          Travel Dream คือบริษัทท่องเที่ยวที่มุ่งมั่นสร้างประสบการณ์
+          การเดินทางที่น่าประทับใจให้กับลูกค้าทุกคน
+          เราให้ความสำคัญกับการบริการ ความสะดวกสบาย
+          และการวางแผนการเดินทางอย่างใส่ใจ
+        </p>
+        <p style="margin-top: 15px">
+          เรานำเสนอแพ็กเกจท่องเที่ยวหลากหลายรูปแบบ
+          โดยเฉพาะประเทศจีนและญี่ปุ่น เพื่อให้ทุกการเดินทาง
+          เป็นช่วงเวลาพิเศษที่คุณจดจำได้เสมอ
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- สินค้าและแพ็กเกจทัวร์ -->
+  <section class="products" id="products">
+    <div class="container">
+      <h2 class="section-title">แพ็กเกจทัวร์ของเรา</h2>
+      <p class="section-desc">
+        เลือกจุดหมายปลายทางในฝัน แล้วออกเดินทางไปด้วยกัน
+      </p>
+
+      <div class="cards">
+
+        <!-- ทัวร์จีน -->
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=900&q=85"
+            alt="กำแพงเมืองจีนและภูเขา"
+            loading="lazy">
+          <div class="card-content">
+            <h3>🇨🇳 ทัวร์ประเทศจีน</h3>
+            <p>
+              สัมผัสกำแพงเมืองจีน เมืองประวัติศาสตร์
+              ธรรมชาติอันงดงาม และวัฒนธรรมที่มีเอกลักษณ์
+              พร้อมเปิดประสบการณ์การเดินทางสุดประทับใจ
+            </p>
+            <a href="#contact" class="btn">สอบถามทัวร์จีน</a>
+          </div>
+        </article>
+
+        <!-- ทัวร์ญี่ปุ่น -->
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=85"
+            alt="เมืองเกียวโต ประเทศญี่ปุ่น"
+            loading="lazy">
+          <div class="card-content">
+            <h3>🇯🇵 ทัวร์ประเทศญี่ปุ่น</h3>
+            <p>
+              ชมภูเขาไฟฟูจิ เดินเล่นย่านเมืองเก่า
+              ชมซากุระ ลิ้มลองอาหารญี่ปุ่น
+              และสัมผัสเสน่ห์ของญี่ปุ่นในทุกฤดูกาล
+            </p>
+            <a href="#contact" class="btn">สอบถามทัวร์ญี่ปุ่น</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ติดต่อบริษัท -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">ติดต่อเรา</h2>
+      <p class="section-desc">
+        สนใจแพ็กเกจทัวร์หรือสอบถามรายละเอียดเพิ่มเติม
+        ติดต่อทีมงานของเราได้เลย
+      </p>
+
+      <p>โทรศัพท์</p>
+      <div class="phone">098-765-43</div>
+
+      <a class="btn" href="tel:09876543">
+        ☎ โทรสอบถามตอนนี้
+      </a>
+    </div>
+  </section>
+
+  <!-- ส่วนท้ายเว็บไซต์ -->
+  <footer>
+    <p>© <span id="year"></span> Travel Dream</p>
+    <p>บริษัทท่องเที่ยว | เดินทางอย่างมีความสุขในทุกเส้นทาง</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
